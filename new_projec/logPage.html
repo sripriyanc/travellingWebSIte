@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+  
+
+    <link rel="stylesheet" href="C:\Users\priya\OneDrive\Desktop\new_projec\style.css">
+    <script src="https://kit.fontawesome.com/4ccee11690.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4ccee11690.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon"
+        href="data:image/jpeg;base64,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">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(205, 202, 202);
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .nav {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+
+            display: inline-flex;
+
+
+
+        }
+
+        .nav :hover {
+            color: rgb(123, 125, 246);
+            background-color: rgb(83, 83, 83);
+        }
+
+
+
+        #img1 {
+            position: relative;
+            /* box-shadow: 10px 10px 100px black; */
+        }
+
+        .log {
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            top: 120px;
+            margin-left: 900px;
+            margin-right: 100px;
+            z-index: 99;
+            background-color: rgba(234, 233, 233, 0);
+            width: 300px;
+            padding: 30px;
+            border-radius: 50px;
+            height: 300px;
+            /* background: transparent 50%; */
+        }
+
+        .logmain::after {
+            border: 2px solid rgba(107, 104, 104, 0.77);
+        }
+
+        .head {
+            font-size: 36px;
+
+            line-height: 1;
+
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.544);
+        }
+
+        #btn {
+            border-radius: 5px;
+        }
+
+        .input-group {
+            padding: 10px;
+        }
+
+        .pic {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            filter: blur(2px);
+            border-radius: 20px;
+            top: 10px;
+        }
+
+        .about {
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 10px;
+            position: absolute;
+            z-index: 98;
+            top: 120px;
+            left: 600px;
+            image-resolution: 100px;
+
+        }
+
+        .about .image1 {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+            padding-right: 10rem;
+            padding-bottom: 10rem;
+            transition: 50%;
+            image-resolution: rgbe(0, 0, 0, 20);
+            image-resolution: 100px;
+
+        }
+
+        .about .image1 img {
+            width: 75%;
+            -webkit-box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.50);
+            image-resolution: 100px;
+            z-index: 98;
+            border-radius: 8px;
+        }
+
+
+        .nav2 {}
+
+        .cnt a {
+            color: blue;
+
+        }
+
+        .logimg {
+            z-index: 97;
+            left: -550px;
+            top: 130px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* gap: -5px; */
+            column-gap: -10px;
+            row-gap: 30px;
+            justify-content: space-around;
+            background-color: rgba(255, 255, 255, 0.333);
+            padding-left: 50px;
+            padding-top: 40px;
+            width: 50%;
+            border-radius: 10px;
+            height: 70%;
+
+
+
+
+
+
+            position: absolute;
+
+        }
+
+        .side-img .about.logimg .image2 {
+            height: 20rem;
+            width: 20rem;
+            border-radius: 50%;
+            padding: 20px;
+            margin: 20px;
+
+            display: inline-block;
+        }
+
+        .side-img.about.logimg.image2:hover {
+            border: 2px solid rgba(255, 255, 255, 0.018);
+
+        }
+
+        .image2 img:hover {
+            border: 2px solid rgba(108, 106, 106, 0);
+        }
+
+        .image3 img:hover {
+            border: 2px solid rgba(108, 106, 106, 0);
+        }
+
+        .image4 img:hover {
+            border: 2px solid rgba(108, 106, 106, 0);
+        }
+
+        .image5 img:hover {
+            border: 2px solid rgba(108, 106, 106, 0);
+        }
+
+        .image6 img:hover {
+            border: 2px solid rgba(108, 106, 106, 0);
+
+        }
+
+
+        .content {
+            padding-right: 5px;
+
+
+        }
+
+        .follow_back {
+            top: 80px;
+            width: 450px;
+            position: absolute;
+            height: 160px;
+            left: 60px;
+            border-radius: 5px;
+            background-color: rgba(198, 195, 195, 0.415);
+            border: none;
+        }
+
+        .navbar {}
+
+        /* .side-img .about.logimg  .image3{}
+           .side-img .about.logimg .image4{}
+           .side-img .about.logimg .image5{}
+ */
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid  ">
+        <img id="img1" src="C:\Users\priya\OneDrive\Desktop\travel web\images\footer-bg.jpg" class="img-rounded pic"
+            alt="Cinque Terre" width="100%">
+        <div class="logmain">
+            <div class="log">
+                <div class="head">
+                    <h3>🎟️Create Your Travel account</h3>
+                </div>
+                <div class="login">
+                    <form  name="form1" onsubmit="return click()" method="post">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input  type="text" class="form-control" name="email" placeholder="Email"
+                                style="width:200px ;">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input  type="password" class="form-control" name="password"
+                                placeholder="Password" style="width:200px ;">
+                        </div>
+                        <br>
+                        <div class="input-group">
+
+                          <button type="submit">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="side-img">
+            <input type="textbox" class="follow_back">
+            <div class="about" id="about">
+
+                <div class="logimg">
+
+
+                    <div class="image2">
+                        <img src=C:\Users\priya\OneDrive\Desktop\new_projec\images\pic-1.png class="img-circle"
+                            style=" width:40%; " alt="">
+                        <div class="content">
+                            <h4>Australasia</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="image3">
+                        <img src=C:\Users\priya\OneDrive\Desktop\new_projec\images\pic-2.png class="img-circle"
+                            style=" width:40%;" alt="">
+                        <div class="content">
+                            <h4> Africa</h4>
+                            <p></p>
+                        </div>
+
+
+                    </div>
+                    <div class="image4">
+                        <img src=C:\Users\priya\OneDrive\Desktop\new_projec\images\pic-3.png class="img-circle"
+                            style=" width:40%" ; alt="">
+                        <div class="content">
+                            <h4>North <br> America</h4>
+                            <p></p>
+                        </div>
+
+
+                    </div>
+                    <div class="image4">
+                        <img src=C:\Users\priya\OneDrive\Desktop\new_projec\images\pic-5.png class="img-circle"
+                            style=" width:40%;" alt="">
+                        <div class="content">
+                            <h4>Europe</h4>
+                            <p></p>
+                        </div>
+
+
+                    </div>
+                    <div class="image5">
+                        <img src=C:\Users\priya\OneDrive\Desktop\new_projec\images\pic-6.png class="img-circle"
+                            style=" width:40%;" alt="">
+                        <div class="content">
+                            <h4>Antarctica</h4>
+                            <p></p>
+                        </div>
+
+
+                    </div>
+                    <div class="image6">
+                        <img src=C:\Users\priya\OneDrive\Desktop\new_projec\images\pic-4.png class="img-circle"
+                            style=" width:40%;" alt="">
+                        <div class="content">
+                            <h4>South<br> America</h4>
+                            <p></p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="image1">
+                    <img src=C:\Users\priya\OneDrive\Desktop\new_projec\images\home-bg-1.jpg alt="">
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <nav class="navbar navbar-inverse">
+            <div class="container-fluid nav1 "
+                style="background-color:rgb(255, 255, 255); border: none; background: transparent;">
+                <div class="navbar-header cnt">
+                    <a class="navbar-brand" href="#">✅SHape Your Travel</a>
+                </div>
+
+
+
+                <form class="navbar-form nav2 navbar-right" action="/action_page.php">
+                    <div class="input-group" style=" padding-right: 30px;">
+                        <input type="text" id="sch" class="form-control" placeholder="Search" name="search"
+                            style="width:450px;">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default " type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="log2"> -->
+
+
+        </div>
+        </div>
+        </nav>
+        <script>
+
+
+
+
+            function click() {
+
+               
+                var email = document.form1.email.value;
+                var pass = document.form1.password.value
+                
+
+                    if (email == "") {
+                        alert("email connot be empty");
+                        return false;
+
+                    }
+                    
+
+                    else if (password == "") {
+                        alert("passsword connot be empty");
+                        return false;
+                    }else{
+                        return true;
+                    }
+
+
+                }
+
+
+
+
+
+
+        </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+          integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+          crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>
