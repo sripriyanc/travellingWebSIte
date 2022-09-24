@@ -13,7 +13,7 @@ button.addEventListener('click', submit );
 function submit(){
     // logPage.classList.add("hide");
     // fullviwe.classList.remove("hide")
-    alert("hello")
+    alert("hello world")
 
 }
 
